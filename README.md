@@ -19,7 +19,49 @@ npm install
 export GEMINI_API_KEY="your-api-key"
 ```
 
-## Quick Start
+## Usage with Claude Code
+
+The easiest way to use mofa-pptx is through [Claude Code](https://claude.com/claude-code) with the PPTX skill installed. Claude Code knows all 14 included styles and can generate complete decks from natural language.
+
+**Just describe what you want:**
+
+```
+"Make a 10-slide deck about AI infrastructure trends, dark cinematic style"
+```
+
+Claude Code will pick the right style, write all slide prompts, generate the PNGs, assemble the PPTX, and visually QA the output.
+
+### Style matching
+
+Your description determines which style gets used:
+
+| You describe | Style matched | Look & feel |
+|-------------|--------------|-------------|
+| Consulting deck, strategy analysis | `tectonic.js` | Lavender gradient, monochrome wireframe sketches |
+| Comparing Amazon, Google, Microsoft, NVIDIA | `infra-race.js` | Each section in company brand colors |
+| Open source community, Linux Foundation | `dark-community.js` | Corporate blue/teal, abstract AI orbs |
+| Tea culture, Chinese traditions | `feng-zikai.js` | Ink-wash painting on rice paper |
+| Huawei-branded | `openclaw-huawei.js` | Huawei Red #C7000B |
+| Dark, cinematic, dramatic | `nb-br.js` | Blade Runner 2049 dark palette |
+| Warm, golden tone | `cc-research.js` | Blade Runner golden hour |
+| Science, physics, biology | `what-is-life.js` | Physics dark + biology light |
+| Enterprise AI, purple corporate | `agentic-enterprise.js` | Purple consulting aesthetic |
+
+If no existing style fits your topic, Claude Code creates a new `styles/*.js` for you.
+
+### What Claude Code does
+
+1. **Picks a style** from `styles/*.js` based on your description (or creates a new one)
+2. **Writes slide prompts** with layout descriptions, titles, diagram instructions
+3. **Generates the deck script** (`generate-*.js`) with the right `run()` config
+4. **Runs it** via the Gemini API
+5. **QAs the output** — visually inspects every slide for text issues, layout problems
+6. **Fixes bad slides** — deletes bad PNGs, adjusts prompts, re-runs only broken ones
+7. **Iterates** until the deck is clean
+
+## Manual Usage
+
+You can also write deck scripts directly without Claude Code.
 
 ### 1. Pick or create a style module
 
@@ -49,8 +91,6 @@ module.exports = { styles, getStyle, STYLE_NORMAL, STYLE_COVER };
 ```
 
 ### 2. Write a deck script
-
-Deck scripts define the slides array and call `run()`.
 
 ```javascript
 // generate-my-deck.js
