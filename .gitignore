@@ -5,3 +5,12 @@ tectonic-assets/
 cc-docx/
 *.pptx
 ~$*
+
+# Content (kept local only)
+generate-*.js
+generate-*.py
+gen-whale.js
+test-*.js
+docs/
+*.md
+!README.md
