@@ -1,5 +1,6 @@
 node_modules/
 slides-*/
+cards-*/
 output/
 tectonic-assets/
 cc-docx/
