@@ -259,6 +259,47 @@ node generate-cny-cards.js      # only that card regenerates
 | `cc-research.js` | default | Blade Runner 2049 golden hour warm |
 | `cny-guochao.js` | front, greeting, scene | Chinese New Year — festive red+gold Guochao style (9:16 cards) |
 | `cny-shuimo.js` | front, greeting, scene | Chinese New Year — ink-wash elegant style (9:16 cards) |
+| `laoshu.js` | front, greeting, scene | Old Tree ink-wash — minimal figure + colloquial poetry |
+| `xianer.js` | front, greeting, scene | Xian Er cartoon monk — cute, warm, healing |
+| `relevant.js` | front, greeting, scene, festive | Relevant brand — geometric minimal + festive red-gold variant |
+
+## Quick Start: One-Liner Card Generation with Claude Code
+
+### Setup (once)
+
+```bash
+git clone https://github.com/mofa-org/mofa-pptx.git
+cd mofa-pptx
+npm install
+export GEMINI_API_KEY="your-key"
+```
+
+### Generate Cards
+
+Open Claude Code in the project directory and just say what you want:
+
+> "用水墨风格给张三做一张新年贺卡，祝他新春快乐，万事如意"
+
+Or more specific:
+
+> "用Relevant红色节庆风格给陈岳做一张贺卡，内容是：风浪越大，鱼越贵。新春快乐！"
+
+Claude Code will automatically:
+1. Pick the right style module
+2. Write the prompt
+3. Generate the script and run it
+4. Output high-res PNG
+
+### Style Keywords
+
+| Keyword | Style | Look |
+|---------|-------|------|
+| "国潮" "红金" | cny-guochao | Festive red + gold, dragons, lanterns |
+| "水墨" "雅致" | cny-shuimo | Rice paper, ink wash, plum blossoms |
+| "老树" "打油诗" | laoshu | Minimal ink figure + colloquial poetry |
+| "贤二" "小和尚" | xianer | Cute cartoon monk, warm and healing |
+| "Relevant" "极简" | relevant | Geometric egg-head, pure white |
+| "Relevant红色" "节庆" | relevant (festive) | Red background, gold text, white accents |
 
 ## Prompting Tips
 
