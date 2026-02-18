@@ -239,6 +239,86 @@ rm cards-cny/card-front.png    # delete the bad one
 node generate-cny-cards.js      # only that card regenerates
 ```
 
+## Video Cards
+
+Animate static greeting cards into short videos with background music. The pipeline: **static PNG → Gemini Veo animation → ffmpeg compositing → MP4**.
+
+```javascript
+const { runVideoCards } = require("./lib/engine");
+const { getStyle } = require("./styles/laoshu");
+const { getAnimPrompt, DEFAULT_BGM } = require("./styles/video-card");
+
+const cards = [
+  {
+    name: "heming",
+    style: "scene",
+    prompt: "鹤鸣茶社场景描述...",
+    animStyle: "shuimo",   // Animation style: shuimo | festive | gentle | dynamic
+    animDesc: "Steam rising from tea cups, leaves swaying...",  // Scene-specific details
+  },
+];
+
+runVideoCards({
+  cardDir: "cards-laoshu",
+  cards,
+  getStyle,                        // Image style resolver
+  getAnimPrompt,                   // Animation prompt resolver
+  bgmPath: DEFAULT_BGM,           // Background music (bgm-cny.mp3)
+  aspectRatio: "9:16",
+  imageSize: "2K",
+});
+```
+
+Output: `cards-laoshu/card-heming.png` + `cards-laoshu/card-heming-animated.mp4`
+
+### Animation Styles
+
+| Tag | Style | Best for |
+|-----|-------|----------|
+| `shuimo` | 水墨 — slow, meditative ink-wash motion | Ink painting scenes, landscapes |
+| `festive` | 喜庆 — lively, cheerful movement | Spring Festival, celebrations |
+| `gentle` | 温柔 — dreamy, minimal movement | Portraits, quiet moments |
+| `dynamic` | 动感 — energetic, noticeable motion | Action scenes, animals |
+
+### Video Compositing
+
+Each video includes:
+- **Still frame** (2s) — original card image as thumbnail/preview
+- **Crossfade** (1s) — smooth transition to animation
+- **Veo animation** (~8s) — AI-generated motion
+- **Fade out** (1.5s) — graceful ending
+- **BGM** — background music with fade in/out
+
+All parameters are configurable: `stillDuration`, `crossfadeDur`, `fadeOutDur`, `musicVolume`, `musicFadeIn`.
+
+### Standalone Animation
+
+To animate an existing card PNG without regenerating the image:
+
+```bash
+node animate-card.js heming          # default shuimo style
+node animate-card.js huahua dynamic  # dynamic style
+```
+
+### Caching
+
+Raw Veo videos are cached as `*-raw.mp4`. Delete to force re-animation:
+
+```bash
+rm cards-laoshu/card-heming-raw.mp4    # delete cached Veo video
+node animate-card.js heming             # re-generates animation
+```
+
+### Card vs Video Card
+
+| | Cards (`runCards`) | Video Cards (`runVideoCards`) |
+|--|-------------------|------------------------------|
+| Output | PNGs only | PNGs + MP4 videos |
+| Pipeline | Gemini image gen | Gemini image gen → Veo → ffmpeg |
+| Style files | `styles/*.js` | `styles/*.js` + `styles/video-card.js` |
+| Item fields | `{ name, style, prompt }` | `{ name, style, prompt, animStyle?, animDesc? }` |
+| Dependencies | Gemini API | Gemini API + ffmpeg |
+
 ## Included Styles
 
 | Module | Tags | Theme |
@@ -262,6 +342,7 @@ node generate-cny-cards.js      # only that card regenerates
 | `laoshu.js` | front, greeting, scene | Old Tree ink-wash — minimal figure + colloquial poetry |
 | `xianer.js` | front, greeting, scene | Xian Er cartoon monk — cute, warm, healing |
 | `relevant.js` | front, greeting, scene, festive | Relevant brand — geometric minimal + festive red-gold variant |
+| `video-card.js` | shuimo, festive, gentle, dynamic | Video animation — Veo animation prompts + ffmpeg compositing config |
 
 ## Quick Start: One-Liner Card Generation with Claude Code
 
