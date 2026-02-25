@@ -39,10 +39,10 @@ Your description determines which style gets used:
 | You describe | Style matched | Look & feel |
 |-------------|--------------|-------------|
 | Consulting deck, strategy analysis | `tectonic.js` | Lavender gradient, monochrome wireframe sketches |
-| Comparing Amazon, Google, Microsoft, NVIDIA | `infra-race.js` | Each section in company brand colors |
+| Comparing Amazon, Google, Microsoft, NVIDIA | `multi-brand.js` | Each section in company brand colors |
 | Open source community, Linux Foundation | `dark-community.js` | Corporate blue/teal, abstract AI orbs |
 | Tea culture, Chinese traditions | `feng-zikai.js` | Ink-wash painting on rice paper |
-| Huawei-branded | `openclaw-huawei.js` | Huawei Red #C7000B |
+| Red-branded corporate | `openclaw-red.js` | Red #C7000B accent |
 | Dark, cinematic, dramatic | `nb-br.js` | Blade Runner 2049 dark palette |
 | Warm, golden tone | `cc-research.js` | Blade Runner golden hour |
 | Science, physics, biology | `what-is-life.js` | Physics dark + biology light |
@@ -325,15 +325,14 @@ node animate-card.js heming             # re-generates animation
 |--------|------|-------|
 | `tectonic.js` | normal, data, cover | Lavender gradient, whale watermark, monochrome wireframe |
 | `opensource.js` | normal, data, cover | Similar to tectonic, cartoon whale variant |
-| `infra-race.js` | cover, amazon_dark, amazon_light, google, microsoft, nvidia_dark, nvidia_light, overview | Multi-company branded wireframes |
+| `multi-brand.js` | cover, amazon_dark, amazon_light, google, microsoft, nvidia_dark, nvidia_light, overview | Multi-company branded wireframes |
 | `feng-zikai.js` | scene, content, emotion | Feng Zikai ink-wash painting on rice paper |
 | `dark-community.js` | default | Linux Foundation corporate, abstract AI orbs |
 | `agentic-enterprise.js` | normal, cover, data, warm | Purple consulting deck |
-| `agentic-enterprise-huawei.js` | normal, cover, data | Huawei Red branded |
-| `tea-camp.js` | cover, day1, day2, day3, info | Lingnan ink-wash painting |
+| `agentic-enterprise-red.js` | normal, cover, data | Red branded |
+| `lingnan.js` | cover, day1, day2, day3, info | Lingnan ink-wash painting |
 | `what-is-life.js` | cover, physics_dark, biology_light, overview | Science-themed |
-| `openclaw-huawei.js` | normal, cover, data | Huawei-branded 4K |
-| `huawei-linaro.js` | normal | Huawei red corporate |
+| `openclaw-red.js` | normal, cover, data | Red-branded 4K |
 | `nb-pro.js` | default | Lavender gradient purple accent |
 | `nb-br.js` | default | Blade Runner 2049 dark cinematic |
 | `cc-research.js` | default | Blade Runner 2049 golden hour warm |

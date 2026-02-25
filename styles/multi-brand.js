@@ -4,7 +4,7 @@ const STYLE_AMAZON_DARK = `Create a presentation slide image. 1920×1080 pixels,
 
 BACKGROUND: Dark navy (#232F3E), solid, elegant, premium.
 
-TYPOGRAPHY: Noto Sans SC font (clean Chinese sans-serif) for ALL text. ALL text in Chinese ONLY — absolutely NO English anywhere on the slide.
+TYPOGRAPHY: Noto Sans SC font (clean Chinese sans-serif) for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Title: bold, Amazon orange, large heading, top-left aligned
 - Body: light weight, light gray, standard body size
 - Stat numbers: bold, Amazon orange, very large display size
@@ -25,7 +25,7 @@ const STYLE_AMAZON_LIGHT = `Create a presentation slide image. 1920×1080 pixels
 
 BACKGROUND: White (#FFFFFF), clean, minimal.
 
-TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY.
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Title: bold, black, large heading. The word "Amazon" (if present) in Amazon orange.
 - Body: light weight, medium gray, standard body size
 - Stat numbers: bold, Amazon orange, very large display size
@@ -45,7 +45,7 @@ const STYLE_GOOGLE = `Create a presentation slide image. 1920×1080 pixels, 16:9
 
 BACKGROUND: Very light warm gray (#F8F9FA) to white, clean, airy.
 
-TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY.
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Title: bold, near-black, large heading. Company name in Google blue.
 - Body: light weight, medium gray, standard body size
 - Stat numbers: bold, very large display size, using Google's four brand colors for different stats
@@ -65,7 +65,7 @@ const STYLE_MICROSOFT = `Create a presentation slide image. 1920×1080 pixels, 1
 
 BACKGROUND: White (#FFFFFF), pristine, corporate-clean.
 
-TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY.
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Title: bold, black, large heading. Company name in Microsoft blue.
 - Body: light weight, medium gray, standard body size
 - Stat numbers: bold, very large display size
@@ -84,7 +84,7 @@ const STYLE_NVIDIA_DARK = `Create a presentation slide image. 1920×1080 pixels,
 
 BACKGROUND: Pure black (#000000) to very dark (#0A0A0A), dramatic, premium.
 
-TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY.
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Title: bold, NVIDIA green, large heading
 - Body: light weight, light gray, standard body size
 - Stat numbers: bold, NVIDIA green, very large display size
@@ -104,7 +104,7 @@ const STYLE_NVIDIA_LIGHT = `Create a presentation slide image. 1920×1080 pixels
 
 BACKGROUND: White (#FFFFFF), clean.
 
-TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY.
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Title: bold, black, large heading
 - Body: light weight, medium gray, standard body size
 - Stat numbers: bold, NVIDIA green, very large display size
@@ -122,7 +122,7 @@ const STYLE_OVERVIEW = `Create a presentation slide image. 1920×1080 pixels, 16
 
 BACKGROUND: White (#FFFFFF) or very light gray (#F8F9FA), clean, neutral.
 
-TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY.
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Title: bold, black, large heading
 - Body: light weight, medium gray, standard body size
 - Stat numbers: bold, very large display size
@@ -145,11 +145,67 @@ BACKGROUND: Medium lavender/purple gradient — from #C8B8E0 (medium lavender) a
 
 In the right half, include VERY FAINT wireframe sketches (at 10-15% opacity) of four iconic tech shapes: a GPU chip die, a TPU wafer, a self-driving car outline, and a server rack — overlapping subtly like a collage watermark. Drawn in faint purple lines (#A090C0). They should NOT compete with the text.
 
-TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY.
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
 - Main title: bold, very dark navy, extra-large heading
 - ALL other text: OMIT — no subtitle, no metadata, no date. ONLY the main title.
 
 The LEFT 50% should be clear for the title. Minimal, elegant, dramatic.`;
+
+const STYLE_TESLA_DARK = `Create a presentation slide image. 1920×1080 pixels, 16:9 landscape format.
+
+BACKGROUND: Very dark charcoal (#1A1A1A) to black (#0D0D0D), sleek, automotive premium.
+
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
+- Title: bold, Tesla red (#CC0000), large heading
+- Body: light weight, light gray, standard body size
+- Stat numbers: bold, Tesla red, very large display size
+
+ILLUSTRATION STYLE (CRITICAL):
+ALL diagrams use sophisticated WIREFRAME SKETCH illustration in TESLA RED:
+- Red (#CC0000) line art on dark backgrounds — thin, sleek automotive lines (~1.5-2px)
+- DETAILED icons: electric car silhouettes with flowing aero lines, humanoid robot with joint articulation, battery cell packs, solar panels, factory floor with robotic arms
+- Hand-drawn/sketch quality but CLEAN and FUTURISTIC — like a Tesla design studio concept board
+- Cards use dark (#222222) background with thin red left border, rounded 12px
+- Generous whitespace — Apple Keynote level, lots of dark breathing room
+
+Premium automotive-tech consulting aesthetic with red wireframe on dark. Sleek, futuristic, powerful.`;
+
+const STYLE_TESLA_LIGHT = `Create a presentation slide image. 1920×1080 pixels, 16:9 landscape format.
+
+BACKGROUND: White (#FFFFFF), clean, minimal.
+
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
+- Title: bold, black, large heading. "Tesla" in Tesla red.
+- Body: light weight, medium gray, standard body size
+- Stat numbers: bold, Tesla red (#CC0000), very large display size
+
+ILLUSTRATION STYLE (CRITICAL):
+Wireframe sketches in dark gray with Tesla red (#CC0000) accent highlights.
+- Dark stat cards (#1A1A1A) with red numbers for dramatic contrast
+- Regular cards white with red left border
+- DETAILED wireframe icons of electric vehicles, humanoid robots, battery packs, solar arrays, Gigafactory outlines
+- Generous whitespace — Apple Keynote level
+
+Premium automotive consulting aesthetic with red accent wireframes on white.`;
+
+const STYLE_SPACEX = `Create a presentation slide image. 1920×1080 pixels, 16:9 landscape format.
+
+BACKGROUND: Deep space black (#050510) with very subtle dark blue nebula tint, vast and cosmic.
+
+TYPOGRAPHY: Noto Sans SC font for ALL text. ALL text in Chinese ONLY — English OK for brand names, product names, and numbers.
+- Title: bold, white or ice blue (#A8D8EA), large heading
+- Body: light weight, light gray (#CCCCCC), standard body size
+- Stat numbers: bold, ice blue (#A8D8EA) or bright white, very large display size
+
+ILLUSTRATION STYLE (CRITICAL):
+ALL diagrams use sophisticated WIREFRAME SKETCH illustration in ICE BLUE and WHITE:
+- Ice blue (#A8D8EA) and white line art on deep black — thin, precise, aerospace-grade lines
+- DETAILED icons: rocket silhouettes with engine bells, satellite constellations with orbital paths, GPU server racks, data center modules, Earth globe with orbital rings, Starship with heat shield tiles
+- Hand-drawn/sketch quality but PRECISION ENGINEERED — like a SpaceX mission control whiteboard
+- Cards use near-black (#111122) background with thin ice blue border, rounded 12px
+- Generous whitespace — vast cosmic emptiness between elements
+
+Premium aerospace-tech aesthetic with ice blue wireframe on space black. Cosmic, ambitious, infinite.`;
 
 const styles = {
   cover: STYLE_COVER,
@@ -159,6 +215,9 @@ const styles = {
   microsoft: STYLE_MICROSOFT,
   nvidia_dark: STYLE_NVIDIA_DARK,
   nvidia_light: STYLE_NVIDIA_LIGHT,
+  tesla_dark: STYLE_TESLA_DARK,
+  tesla_light: STYLE_TESLA_LIGHT,
+  spacex: STYLE_SPACEX,
   overview: STYLE_OVERVIEW,
 };
 
@@ -169,5 +228,6 @@ function getStyle(tag) {
 module.exports = {
   styles, getStyle,
   STYLE_COVER, STYLE_AMAZON_DARK, STYLE_AMAZON_LIGHT, STYLE_GOOGLE,
-  STYLE_MICROSOFT, STYLE_NVIDIA_DARK, STYLE_NVIDIA_LIGHT, STYLE_OVERVIEW,
+  STYLE_MICROSOFT, STYLE_NVIDIA_DARK, STYLE_NVIDIA_LIGHT,
+  STYLE_TESLA_DARK, STYLE_TESLA_LIGHT, STYLE_SPACEX, STYLE_OVERVIEW,
 };
