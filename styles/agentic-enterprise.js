@@ -30,7 +30,7 @@ Every slide MUST have LARGE, DETAILED WIREFRAME illustrations that are PROMINENT
 - Illustrations should be LARGE SCENE COMPOSITIONS occupying ~35-40% of the slide
 - Detailed wireframe elements: monitors with visible screen content, server racks with individual drives, network graphs with labeled nodes, brain outlines with neural pathways, gear mechanisms with visible teeth
 - Each card/section should have its own wireframe illustration — NOT text-only
-- Think: McKinsey strategy deck concept illustrations but BIGGER and more detailed
+- Think: premium strategy deck concept illustrations but BIGGER and more detailed
 - Labels in clean UPPERCASE Manrope text beside wireframe elements
 - NO solid color fills, NO gradients on illustrations, NO wireframe effects — pure line art
 
@@ -82,7 +82,7 @@ ILLUSTRATION STYLE:
 - LARGE detailed WIREFRAME illustration at 15-20% opacity as atmospheric background
 - Interconnected nodes, gear mechanisms, neural pathway outlines — all in wireframe line art
 - Purple-gray lines (#9B7FD4), NO solid fills, NO gradients — pure clean outlines
-- Elegant, premium — like a McKinsey annual report cover
+- Elegant, premium — like a premium annual report cover
 
 Light, airy, premium. Atmospheric wireframe illustration behind title.`;
 
@@ -108,7 +108,7 @@ DATA DISPLAY STYLE:
 ILLUSTRATION STYLE (CRITICAL):
 Even data slides need PROMINENT WIREFRAME illustrations — detailed line art scene compositions (network diagrams, server racks, flow charts, brain outlines). NOT tiny icons. Each data slide should have at least one medium-to-large wireframe illustration element. NO solid fills, NO gradients — pure line art in purple-gray.
 
-McKinsey data slide with detailed wireframe illustrations.`;
+Premium data slide with detailed wireframe illustrations.`;
 
 const styles = {
   normal: STYLE_NORMAL,

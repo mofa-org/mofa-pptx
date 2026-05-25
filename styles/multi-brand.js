@@ -19,7 +19,7 @@ ALL diagrams use sophisticated WIREFRAME SKETCH illustration in ORANGE tones:
 - Cards use dark card backgrounds (#2C3849) with thin orange left border, rounded corners (12px)
 - Generous white space inside each card — diagrams breathe, never cramped
 
-CRITICAL: Premium consulting deck aesthetic (McKinsey / BCG quality) with hand-drawn wireframe concept sketches in orange on dark navy. Apple Keynote level whitespace and typography. Intellectual, sophisticated, dramatic.`;
+CRITICAL: Premium consulting deck aesthetic with hand-drawn wireframe concept sketches in orange on dark navy. Apple Keynote level whitespace and typography. Intellectual, sophisticated, dramatic.`;
 
 const STYLE_AMAZON_LIGHT = `Create a presentation slide image. 1920×1080 pixels, 16:9 landscape format.
 

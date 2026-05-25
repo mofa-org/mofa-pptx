@@ -50,7 +50,7 @@ Lingnan painting school (岭南画派) ink-wash illustrations in warm amber/brow
 - Generous whitespace — Apple Keynote level spacing with the contemplative emptiness of Chinese painting
 - Small decorative tea leaf or steam motifs as section dividers
 
-Premium consulting deck meets traditional Chinese aesthetic. McKinsey quality layout with Lingnan painting illustrations.`;
+Premium consulting deck meets traditional Chinese aesthetic. Premium consulting quality layout with Lingnan painting illustrations.`;
 
 const STYLE_DAY2 = `Create a presentation slide image. 1920×1080 pixels, 16:9 landscape format.
 

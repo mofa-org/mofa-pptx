@@ -24,7 +24,7 @@ ALL diagrams use sophisticated MONOCHROME WIREFRAME SKETCH illustration:
 
 The light purple gradient background should be VISIBLE — cards are white so they contrast against the soft lavender background. The overall color feeling is elegant purple/lavender.
 
-CRITICAL: Premium consulting deck aesthetic (McKinsey / Bain style) with hand-drawn concept sketches — intellectual, sophisticated, monochrome diagrams on elegant light purple background.`;
+CRITICAL: Premium consulting deck aesthetic with hand-drawn concept sketches — intellectual, sophisticated, monochrome diagrams on elegant light purple background.`;
 
 const STYLE_DATA = `Create a presentation slide image. 1920×1080 pixels, 16:9 landscape format.
 

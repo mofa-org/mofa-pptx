@@ -31,7 +31,7 @@ ALL diagrams use sophisticated WIREFRAME SKETCH illustration in CYAN/TEAL tones:
 - Cards use dark card backgrounds (#132F4C) with thin cyan left border, rounded corners (12px)
 - Generous white space inside each card — diagrams breathe, never cramped
 
-CRITICAL: Premium consulting deck aesthetic (McKinsey / BCG quality) with hand-drawn wireframe concept sketches in cyan on dark navy. Apple Keynote level whitespace and typography. Intellectual, sophisticated, scientific.`;
+CRITICAL: Premium consulting deck aesthetic with hand-drawn wireframe concept sketches in cyan on dark navy. Apple Keynote level whitespace and typography. Intellectual, sophisticated, scientific.`;
 
 const STYLE_BIOLOGY_LIGHT = `Create a presentation slide image. 1920x1080 pixels, 16:9 landscape format.
 

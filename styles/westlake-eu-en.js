@@ -1,5 +1,5 @@
 // Westlake EU style — English version
-// Primary: EU Blue #003399, Huawei Red #C7000B, Azure #4A90D9, Gold #D4A843
+// Primary: EU Blue #003399, Bold Red #C7000B, Azure #4A90D9, Gold #D4A843
 // Background: Clean white/light, EU blue accents on section dividers
 
 const STYLE_NORMAL = `Create a presentation slide image. 3840×2160 pixels, 16:9 landscape format. HIGH RESOLUTION 4K.
@@ -11,7 +11,7 @@ TYPOGRAPHY RULES:
 - Slide titles: bold, large, deep dark blue-gray, top-left aligned
 - Section headers: bold, medium size, deep blue
 - Body text: light weight, medium gray, left-aligned
-- Large stat numbers: geometric sans-serif bold, very large, EU blue or Huawei red
+- Large stat numbers: geometric sans-serif bold, very large, EU blue or bold red
 - ALL TEXT IN ENGLISH.
 
 CRITICAL — NO PROMPT LEAK:
@@ -24,14 +24,14 @@ ILLUSTRATION STYLE:
 Every slide MUST have LARGE, DETAILED WIREFRAME illustrations:
 - WIREFRAME LINE ART style — clean outlines, no solid fills, no photo-realism
 - Line color: deep blue-gray to warm charcoal, line weight about 1.5-2px
-- TWO ACCENT COLORS: EU blue highlights on European/global elements, Huawei red highlights on tech/engine elements
+- TWO ACCENT COLORS: EU blue highlights on European/global elements, bold red highlights on tech/engine elements
 - Illustrations should be LARGE SCENE COMPOSITIONS occupying about 35-40% of the slide
 - Mix of tech elements (circuit traces, server racks, API nodes) and cultural elements (West Lake bridge silhouette, European landmarks as abstract wireframes, tulip/windmill geometric hints)
-- Clean, premium, institutional — like an EU Commission tech report meets Huawei annual report
+- Clean, premium, institutional — like an EU Commission tech report meets premium annual report
 - NO solid color fills, NO gradients on illustrations — pure line art with blue and red accents
 
 LAYOUT:
-- Cards: white background, thin left border in EU blue or Huawei red, completely FLAT — no shadow, no rounded corners
+- Cards: white background, thin left border in EU blue or bold red, completely FLAT — no shadow, no rounded corners
 - Tables: clean borders, alternating white/very-light-blue rows, EU blue header row
 - 0.5 inch minimum margins. Clean spacing.
 - Dual-accent aesthetic: red for tech/engine, blue for strategy/Europe.`;
@@ -67,7 +67,7 @@ TYPOGRAPHY RULES:
 - Title: bold, large, deep blue-gray, top-left aligned
 - Table headers: bold, white text on EU blue background
 - Table body: light weight, medium gray
-- Stat numbers: geometric sans-serif bold, very large, EU blue or Huawei red
+- Stat numbers: geometric sans-serif bold, very large, EU blue or bold red
 - ALL TEXT IN ENGLISH.
 
 CRITICAL — NO PROMPT LEAK:

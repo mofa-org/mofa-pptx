@@ -39,7 +39,7 @@ Every slide MUST have a substantive illustration — NOT tiny icons.
 - Hand-drawn elements: charcoal/sepia pencil sketch in warm tones (#6B5D54 to #4A403A line work on cream)
 - Tech elements: warm bronze and muted gold glow (NEVER cyan, NEVER electric blue, NEVER neon), connected by soft luminous data flow lines in muted gold
 - Illustrations should be LARGE, occupying 35-45% of the slide
-- Think: Bain / McKinsey / The Economist long-form report meets a quietly luminous tech showcase, in warm tones
+- Think: premium consulting / institutional long-form report meets a quietly luminous tech showcase, in warm tones
 
 LAYOUT:
 - Cards/boxes: cream (#F5EDE6) backgrounds with thin muted-gold (#C9B896) borders, soft drop shadow at low opacity

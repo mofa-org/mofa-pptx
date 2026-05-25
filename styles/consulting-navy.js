@@ -1,4 +1,4 @@
-// McKinsey Global Institute style — premium consulting deck
+// Premium consulting style — premium consulting deck
 // Deep navy + warm teal + gold accents, isometric 3D geometric illustrations
 
 const STYLE_COVER = `Create a presentation slide image. 1920x1080 pixels, 16:9 landscape format.
@@ -15,7 +15,7 @@ ILLUSTRATION STYLE:
 - Thin white connecting lines and dot grids at low opacity
 - A subtle network of nodes and edges suggesting interconnection
 - NO cartoons, NO photorealism — pure geometric abstraction
-- Premium, confident, institutional feel like McKinsey or BCG cover pages
+- Premium, confident, institutional feel like premium consulting cover pages
 
 OVERALL: Clean, commanding, authoritative. Deep navy conveys trust. Gold accent conveys premium. Sparse but impactful. NO clutter. Generous whitespace around title.
 
@@ -36,7 +36,7 @@ TYPOGRAPHY:
 
 LAYOUT PRINCIPLES:
 - LEFT-ALIGNED text blocks, generous margins (min 0.7 inches from edges)
-- Cards/boxes: white background with thin LEFT BORDER in navy or teal (3px), NO shadow, NO rounded corners — SHARP, FLAT McKinsey style
+- Cards/boxes: white background with thin LEFT BORDER in navy or teal (3px), NO shadow, NO rounded corners — SHARP, FLAT consulting style
 - Data callouts: large stat number + small label below, contained in a clean box
 - Tables: thin 1px gray borders, navy header row with white text
 - ALL boxes and content areas must be FLAT — no gradients, no shadows, no 3D effects on content

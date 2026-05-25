@@ -1,4 +1,4 @@
-// OpenClaw Huawei — Huawei corporate red/black with wireframe lobster/claw motifs
+// OpenClaw Red — Corporate red/black with wireframe lobster/claw motifs
 
 const STYLE_NORMAL = `Create a presentation slide image. 3840×2160 pixels, 16:9 landscape format. HIGH RESOLUTION 4K — every detail crisp and sharp.
 
@@ -21,7 +21,7 @@ Every slide MUST have LARGE, DETAILED WIREFRAME illustrations that are PROMINENT
 - Illustrations should be LARGE SCENE COMPOSITIONS occupying ~35-40% of the slide
 - Detailed wireframe elements: lobster/claw motifs, network nodes, chat bubbles, device outlines, agent workflows
 - Each card/section should have its own wireframe illustration
-- Think: Huawei Annual Report, MWC keynote deck — bold, tech-forward, confident
+- Think: premium annual report, tech keynote deck — bold, tech-forward, confident
 - Labels in clean UPPERCASE Manrope text beside wireframe elements
 - NO solid color fills, NO gradients on illustrations — pure line art with red accents
 
@@ -30,7 +30,7 @@ LAYOUT:
 - Cards: white background, thin RED left border (#C7000B), FLAT — NO shadow. Completely flat boxes.
 - 0.5" minimum margins. Clean spacing.
 
-Huawei corporate aesthetic. Bold, tech-forward, confident. Red and black premium feel.`;
+Bold corporate aesthetic. Bold, tech-forward, confident. Red and black premium feel.`;
 
 const STYLE_COVER = `Create a presentation slide image. 3840×2160 pixels, 16:9 landscape format. HIGH RESOLUTION 4K — every detail crisp and sharp.
 
@@ -49,9 +49,9 @@ ILLUSTRATION STYLE:
 - Interconnected nodes, lobster claw silhouette integrated into network pattern
 - Red accent lines (#C7000B) on key nodes, white/gray lines for the rest
 - Circuit board traces, chat bubble outlines, device silhouettes connected
-- Elegant, bold — like a Huawei MWC keynote cover
+- Elegant, bold — like a premium tech keynote cover
 
-Dark, bold, premium. Huawei keynote cover feel — confident and tech-forward.`;
+Dark, bold, premium. Premium keynote cover feel — confident and tech-forward.`;
 
 const STYLE_DATA = `Create a presentation slide image. 3840×2160 pixels, 16:9 landscape format. HIGH RESOLUTION 4K — every detail crisp and sharp.
 
@@ -61,7 +61,7 @@ TYPOGRAPHY:
 - English text: Manrope font (geometric modern sans-serif)
 - Chinese text: Noto Sans SC font (clean Chinese sans-serif)
 - Title: font-weight 700, 24pt, color #1A1A1A (deep black), LEFT-ALIGNED. Title only — NO subtitle, NO footer, NO page number.
-- Table headers: font-weight 700, 14-16pt, white text on #C7000B background (Huawei red)
+- Table headers: font-weight 700, 14-16pt, white text on #C7000B background (bold red)
 - Table body: font-weight 300, 13-15pt, #444444
 - Stat numbers: font-weight 700, Manrope, 48-64pt, #C7000B or #1A1A1A
 - ALL TEXT IN CHINESE except proper nouns.
@@ -74,7 +74,7 @@ DATA DISPLAY STYLE:
 ILLUSTRATION STYLE (CRITICAL):
 Even data slides need PROMINENT WIREFRAME illustrations — detailed line art with red accents. NOT tiny icons. Each data slide should have at least one medium-to-large wireframe illustration.
 
-Huawei data slide aesthetic — bold red accents, clean data.`;
+Premium data slide aesthetic — bold red accents, clean data.`;
 
 const styles = {
   normal: STYLE_NORMAL,
