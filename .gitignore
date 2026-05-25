@@ -1,16 +1,43 @@
 node_modules/
+.DS_Store
+.env
+.env.*
+~$*
+
+# Binary outputs
+*.pptx
+*.docx
+*.xlsx
+*.png
+*.mp4
+*.mov
+
+# Project / output directories
 slides-*/
 cards-*/
+*-cards/
+*-slides/
 output/
 tectonic-assets/
 cc-docx/
-*.pptx
-~$*
+assets/
+aosf/
+cann/
+huawei*/
+gosim-*/
+open-robotics-*/
+ref-photos/
+octopus-icon/
+transcripts/
 
-# Content (kept local only)
+# Local-only scripts
 generate-*.js
 generate-*.py
+generate-*.sh
 gen-whale.js
+make-editable*.js
+draw-*.py
+concat-*.sh
 test-*.js
 docs/
 *.md
